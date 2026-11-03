@@ -13,7 +13,7 @@
 
   <div class="prototype-bar">
     <span>Layout prototype</span>
-    <span class="prototype-note">Asset slots are intentionally empty</span>
+    <span class="prototype-note">Now showing released v0.3.3 showcase art</span>
   </div>
 
   <header class="site-header" data-header>
@@ -31,6 +31,7 @@
 
     <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
       <a href="#features">Features</a>
+      <a href="#slayer">Slayer</a>
       <a href="#future">Future</a>
       <a href="#join">Download</a>
       <a href="#join">Discord</a>
@@ -60,7 +61,7 @@
         <ul class="quick-facts" aria-label="Project facts">
           <li><strong>Free</strong><span>to play</span></li>
           <li><strong>Open</strong><span>source</span></li>
-          <li><strong>v0.2.80</strong><span>current prototype copy</span></li>
+          <li><strong>v0.3.3</strong><span>current release</span></li>
         </ul>
       </div>
 
@@ -87,7 +88,7 @@
         <article><strong>New</strong><span>skills to learn</span></article>
         <article><strong>One</strong><span>old world we couldn't leave alone</span></article>
       </div>
-      <p class="prototype-disclaimer">Draft showcase figures will be verified against the current release before publication.</p>
+      <p class="prototype-disclaimer">Release baseline: v0.3.3. Remaining draft claims and links will be checked again before publication.</p>
     </section>
 
     <section class="features section-shell" id="features" aria-labelledby="features-title">
@@ -104,24 +105,24 @@
             <p>Melee, Ranged, and Magic all work in fights involving multiple players and enemies. Area attacks, new weapon families, summons, and support magic give everyone more to do than wait their turn.</p>
             <a href="#join" class="inline-link">Have a look at combat <span aria-hidden="true">→</span></a>
           </div>
-          <div class="media-slot feature-media" data-asset-slot="combat-showcase">
-            <div class="media-placeholder">
-              <span class="placeholder-kicker">Feature asset 01</span>
-              <strong>Multi-combat or area-attack clip</strong>
-              <small>16:9 image or user-controlled video</small>
-            </div>
+          <div class="media-slot feature-media showcase-media whip-media" data-asset-slot="combat-showcase">
+            <img src="assets/showcase/slayer/equipment/abyssal-whip-action.gif" alt="A player in dark beast hide armour demonstrating the Abyssal Whip">
+            <span class="asset-caption">Abyssal Whip with Dark beast hide armour</span>
           </div>
         </article>
 
         <article class="feature">
-          <div class="media-slot feature-media" data-asset-slot="item-sprites">
-            <div class="sprite-stage" aria-hidden="true">
-              <i></i><i></i><i></i><i></i><i></i><i></i>
+          <div class="media-slot feature-media showcase-media item-showcase" data-item-showcase data-asset-slot="item-sprites">
+            <img data-item-image src="assets/showcase/items/elemental-swords.gif" alt="A selection of elemental swords">
+            <div class="showcase-controls" aria-label="Choose an item collection">
+              <button class="is-active" type="button" data-src="assets/showcase/items/elemental-swords.gif" data-alt="A selection of elemental swords" data-label="Elemental swords" aria-pressed="true">Swords</button>
+              <button type="button" data-src="assets/showcase/items/leather-armour-sets.gif" data-alt="A character cycling through expanded leather armour sets" data-label="Leather armour" aria-pressed="false">Armour</button>
+              <button type="button" data-src="assets/showcase/items/sigils.gif" data-alt="A selection of magical sigils" data-label="Sigils" aria-pressed="false">Sigils</button>
+              <button type="button" data-src="assets/showcase/items/bangles.gif" data-alt="A selection of bangles" data-label="Bangles" aria-pressed="false">Bangles</button>
+              <button type="button" data-src="assets/showcase/items/god-maces.gif" data-alt="A selection of god-aligned maces" data-label="God maces" aria-pressed="false">Maces</button>
+              <button type="button" data-src="assets/showcase/items/shuriken.gif" data-alt="A selection of shuriken" data-label="Shuriken" aria-pressed="false">Shuriken</button>
             </div>
-            <div class="media-placeholder compact">
-              <span class="placeholder-kicker">Feature asset 02</span>
-              <strong>Curated new-item sprites</strong>
-            </div>
+            <span class="asset-caption" data-item-label>Elemental swords</span>
           </div>
           <div class="feature-copy">
             <span class="feature-number">02 / Equipment</span>
@@ -177,6 +178,44 @@
       </div>
     </section>
 
+    <section class="slayer section-shell" id="slayer" aria-labelledby="slayer-title">
+      <div class="section-heading slayer-heading">
+        <p class="eyebrow"><span></span>Now in the game</p>
+        <h2 id="slayer-title">The Slayer Tower has opened its doors.</h2>
+        <p>There are new assignments to take, creatures to track down, and equipment worth bringing home. Pick a name below to meet some of the new locals. They are not especially pleased to see you.</p>
+      </div>
+
+      <div class="slayer-showcase" data-slayer-showcase>
+        <div class="slayer-stage">
+          <img data-slayer-image src="assets/showcase/slayer/monsters/abyssal-demon.gif" alt="An Abyssal demon turning and attacking">
+          <div class="slayer-stage-copy">
+            <span class="status-label">Slayer creature</span>
+            <h3 data-slayer-name>Abyssal demon</h3>
+            <p>One of eight new animated creatures waiting in the released Slayer content.</p>
+          </div>
+        </div>
+        <div class="slayer-roster" aria-label="Choose a Slayer creature">
+          <button class="is-active" type="button" data-src="assets/showcase/slayer/monsters/abyssal-demon.gif" data-name="Abyssal demon" data-alt="An Abyssal demon turning and attacking" aria-pressed="true">Abyssal demon</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/dark-beast.gif" data-name="Dark beast" data-alt="A Dark beast turning and attacking" aria-pressed="false">Dark beast</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/bloodveld.gif" data-name="Bloodveld" data-alt="A Bloodveld turning and attacking" aria-pressed="false">Bloodveld</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/naga.gif" data-name="Naga" data-alt="A Naga turning and attacking" aria-pressed="false">Naga</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/terror-dog.gif" data-name="Terror dog" data-alt="A Terror dog turning and attacking" aria-pressed="false">Terror dog</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/banshee.gif" data-name="Banshee" data-alt="A Banshee turning and attacking" aria-pressed="false">Banshee</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/cockatrice.gif" data-name="Cockatrice" data-alt="A Cockatrice turning and attacking" aria-pressed="false">Cockatrice</button>
+          <button type="button" data-src="assets/showcase/slayer/monsters/giant-frog.gif" data-name="Giant frog" data-alt="A Giant frog turning and attacking" aria-pressed="false">Giant frog</button>
+        </div>
+        <aside class="slayer-loot">
+          <img src="assets/showcase/slayer/equipment/slayer-weapons.gif" alt="The Abyssal Whip, Thunder Spire Staff, and Leaching Bow">
+          <div>
+            <span class="feature-number">Three combat styles</span>
+            <h3>A few convincing reasons to go upstairs.</h3>
+            <p>The Abyssal Whip, Thunder Spire Staff, and Leaching Bow give Melee, Magic, and Ranged players something new to chase.</p>
+          </div>
+        </aside>
+      </div>
+      <p class="prototype-disclaimer">Showcase animations present the released artwork clearly; they are not recordings of exact in-game combat timing.</p>
+    </section>
+
     <section class="name-story section-shell" aria-labelledby="name-title">
       <div class="milk-stamp" aria-hidden="true">
         <span>OPEN RSC</span>
@@ -200,7 +239,7 @@
         <p>We're still tinkering. These are a few familiar places currently finding their way into Spoiled Milk.</p>
       </div>
 
-      <div class="roadmap-grid">
+      <div class="roadmap-grid roadmap-grid-two">
         <article class="roadmap-card">
           <div class="media-slot roadmap-media" data-asset-slot="future-god-wars">
             <div class="media-placeholder compact"><strong>God Wars sprite sheet</strong></div>
@@ -216,14 +255,6 @@
           <span class="status-label">In development</span>
           <h3>Barrows Brothers</h3>
           <p>Six familiar brothers, old crypts, and plenty of room to make the trip underground feel new again.</p>
-        </article>
-        <article class="roadmap-card">
-          <div class="media-slot roadmap-media" data-asset-slot="future-slayer-tower">
-            <div class="media-placeholder compact"><strong>Slayer Tower sprite sheet</strong></div>
-          </div>
-          <span class="status-label">In development</span>
-          <h3>Slayer Tower</h3>
-          <p>A suitably gloomy home for new creatures, new rewards, and more reasons to go monster hunting.</p>
         </article>
       </div>
       <p class="future-note">Future plans, names, visuals, and details may change during development.</p>

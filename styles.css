@@ -610,6 +610,84 @@ h3 {
   order: 2;
 }
 
+.showcase-media {
+  padding: clamp(2.5rem, 6vw, 5rem) 1.5rem 5.5rem;
+}
+
+.showcase-media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: min(86%, 520px);
+  max-height: 410px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 18px 20px rgba(0, 0, 0, 0.3));
+}
+
+.whip-media img {
+  width: min(84%, 520px);
+}
+
+.asset-caption {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 2;
+  color: rgba(244, 240, 223, 0.8);
+  font: 700 0.66rem/1.4 var(--mono);
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item-showcase {
+  grid-template-rows: 1fr auto;
+  padding-bottom: 5.8rem;
+}
+
+.item-showcase > img {
+  width: min(72%, 420px);
+  min-height: 170px;
+}
+
+.showcase-controls {
+  position: absolute;
+  right: 1rem;
+  bottom: 2.7rem;
+  left: 1rem;
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  justify-content: center;
+}
+
+.showcase-controls button,
+.slayer-roster button {
+  color: var(--cream);
+  background: rgba(23, 51, 41, 0.88);
+  border: 1px solid rgba(244, 240, 223, 0.32);
+  cursor: pointer;
+  font: 750 0.65rem/1.2 var(--mono);
+}
+
+.showcase-controls button {
+  padding: 0.45rem 0.6rem;
+}
+
+.showcase-controls button:hover,
+.showcase-controls button:focus-visible,
+.showcase-controls button.is-active,
+.slayer-roster button:hover,
+.slayer-roster button:focus-visible,
+.slayer-roster button.is-active {
+  color: var(--green-dark);
+  background: var(--lime);
+  border-color: var(--lime);
+}
+
 .sprite-stage {
   position: absolute;
   inset: 0;
@@ -640,6 +718,118 @@ h3 {
 
 .media-placeholder.compact strong {
   font-size: 1rem;
+}
+
+.slayer {
+  width: min(1440px, 92vw);
+}
+
+.slayer-heading {
+  max-width: 960px;
+}
+
+.slayer-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(210px, 0.55fr);
+  border: 1px solid var(--ink);
+  background: var(--green-dark);
+  box-shadow: 14px 14px 0 var(--cream-deep);
+}
+
+.slayer-stage {
+  position: relative;
+  display: grid;
+  min-height: 610px;
+  place-items: center;
+  overflow: hidden;
+  padding: 3rem;
+  background:
+    radial-gradient(circle at 50% 46%, rgba(183, 215, 116, 0.18), transparent 19rem),
+    linear-gradient(145deg, #204636, var(--green-dark));
+  border-right: 1px solid rgba(244, 240, 223, 0.2);
+}
+
+.slayer-stage::before {
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(244, 240, 223, 0.14);
+  content: "";
+  pointer-events: none;
+}
+
+.slayer-stage img {
+  display: block;
+  width: min(80%, 630px);
+  max-width: min(80%, 630px);
+  max-height: 470px;
+  object-fit: contain;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 24px 22px rgba(0, 0, 0, 0.36));
+}
+
+.slayer-stage-copy {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  color: var(--cream);
+}
+
+.slayer-stage-copy .status-label {
+  margin-bottom: 0.6rem;
+}
+
+.slayer-stage-copy h3 {
+  margin-bottom: 0.35rem;
+}
+
+.slayer-stage-copy p {
+  max-width: 440px;
+  margin: 0;
+  color: rgba(244, 240, 223, 0.7);
+  font-size: 0.82rem;
+}
+
+.slayer-roster {
+  display: grid;
+  align-content: center;
+  gap: 0.55rem;
+  padding: 1.4rem;
+}
+
+.slayer-roster button {
+  min-height: 47px;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+}
+
+.slayer-loot {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(200px, 0.65fr) minmax(0, 1.35fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  align-items: center;
+  padding: clamp(2rem, 5vw, 4.5rem);
+  color: var(--ink);
+  background: var(--paper);
+  border-top: 1px solid var(--ink);
+}
+
+.slayer-loot img {
+  display: block;
+  width: min(100%, 420px);
+  margin: auto;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 16px 16px rgba(23, 51, 41, 0.18));
+}
+
+.slayer-loot h3 {
+  margin-bottom: 0.8rem;
+}
+
+.slayer-loot p {
+  max-width: 620px;
+  margin-bottom: 0;
+  color: var(--ink-soft);
 }
 
 .name-story {
@@ -711,6 +901,10 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
+}
+
+.roadmap-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .roadmap-card {
@@ -943,6 +1137,10 @@ a.join-card:focus-visible {
   .join {
     grid-template-columns: 1fr;
   }
+
+  .slayer-stage {
+    min-height: 520px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1007,7 +1205,9 @@ a.join-card:focus-visible {
   .proof-grid,
   .feature-list,
   .name-story,
-  .roadmap-grid {
+  .roadmap-grid,
+  .slayer-showcase,
+  .slayer-loot {
     grid-template-columns: 1fr;
   }
 
@@ -1033,6 +1233,37 @@ a.join-card:focus-visible {
   .feature-wide .feature-media {
     min-height: 300px;
     border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+  }
+
+  .showcase-media {
+    padding-top: 2rem;
+    padding-bottom: 6.3rem;
+  }
+
+  .slayer-stage {
+    min-height: 490px;
+    padding: 2rem 1rem 7.5rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(244, 240, 223, 0.2);
+  }
+
+  .slayer-stage img {
+    max-width: 94%;
+  }
+
+  .slayer-stage-copy {
+    right: 1.2rem;
+    bottom: 1.2rem;
+    left: 1.2rem;
+  }
+
+  .slayer-roster {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 1rem;
+  }
+
+  .slayer-loot {
+    gap: 2rem;
   }
 
   .name-story {

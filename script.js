@@ -21,3 +21,61 @@ if (menuButton && navigation) {
     }
   });
 }
+
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+function displaySource(source) {
+  return reducedMotion.matches ? source.replace(/\.gif$/, '-still.png') : source;
+}
+
+function setPressedButton(buttons, selectedButton) {
+  buttons.forEach((button) => {
+    const isSelected = button === selectedButton;
+    button.classList.toggle('is-active', isSelected);
+    button.setAttribute('aria-pressed', String(isSelected));
+  });
+}
+
+const itemShowcase = document.querySelector('[data-item-showcase]');
+
+if (itemShowcase) {
+  const image = itemShowcase.querySelector('[data-item-image]');
+  const label = itemShowcase.querySelector('[data-item-label]');
+  const buttons = [...itemShowcase.querySelectorAll('button[data-src]')];
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      image.src = displaySource(button.dataset.src);
+      image.alt = button.dataset.alt;
+      label.textContent = button.dataset.label;
+      setPressedButton(buttons, button);
+    });
+  });
+}
+
+const slayerShowcase = document.querySelector('[data-slayer-showcase]');
+
+if (slayerShowcase) {
+  const image = slayerShowcase.querySelector('[data-slayer-image]');
+  const name = slayerShowcase.querySelector('[data-slayer-name]');
+  const buttons = [...slayerShowcase.querySelectorAll('.slayer-roster button[data-src]')];
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      image.src = displaySource(button.dataset.src);
+      image.alt = button.dataset.alt;
+      name.textContent = button.dataset.name;
+      setPressedButton(buttons, button);
+    });
+  });
+}
+
+function refreshMotionPreference() {
+  document.querySelectorAll('img[src$=".gif"], img[src$="-still.png"]').forEach((image) => {
+    const animatedSource = image.src.replace(/-still\.png$/, '.gif');
+    image.src = displaySource(animatedSource);
+  });
+}
+
+refreshMotionPreference();
+reducedMotion.addEventListener('change', refreshMotionPreference);

@@ -17,16 +17,16 @@ by the website prototype and reduced-motion still frames derived with FFmpeg.
 - `slayer/equipment/abyssal-whip-action.gif`: from
   `output/art/showcase/weapons/abyssal-whip/`. The approved art was released
   in v0.3.3 at commit `55ed30a6fa3f2bc732214c7ec93f3c1e0c252e7c`.
-- `items/`: six files copied from the supplied item-variety v002 folder only
-  after confirming each file is byte-for-byte identical to its released v001
-  counterpart: elemental swords, leather armour sets, sigils, bangles, god
-  maces, and shuriken.
+- `items/`: twelve item-variety GIFs from the owner-supplied v002 folder.
+  Elemental swords, leather armour sets, sigils, bangles, god maces, and
+  shuriken are byte-for-byte identical to their released v001 counterparts.
 
-## Deliberately not imported
+## Visual-corrections previews
 
-The changed v002 item-variety GIFs for robes, bolts, crossbows, staves, and
-ingots describe a visual-corrections candidate whose own manifest says the
-public v0.3.3 deployment is unchanged. They should not appear as current live
-art until that work is released, or should be clearly labelled as a
-development preview if the owner chooses to show it sooner.
+At the owner's direction, the gallery also includes the changed v002 robes,
+bolts, crossbows, two staff collections, and ingots. Their source manifest
+describes them as a visual-corrections candidate and says the public v0.3.3
+deployment is unchanged. The prototype labels the collection as previewing
+the next round of sprite touch-ups. Remove that note once the corrected art is
+part of a public release.
 

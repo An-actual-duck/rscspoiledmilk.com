@@ -602,6 +602,13 @@ h3 {
   color: var(--ink-soft);
 }
 
+.panel-note {
+  display: block;
+  margin-top: 18px;
+  color: #7f7c6b;
+  font: 700 9px/1.5 var(--mono);
+}
+
 .panel-number {
   margin-bottom: 16px;
   color: var(--rust);
@@ -611,8 +618,8 @@ h3 {
 }
 
 .item-showcase {
-  min-height: 460px;
-  padding: 35px 25px 92px;
+  min-height: 500px;
+  padding: 35px 25px 125px;
   border-top: 0;
   border-right: 0;
   border-bottom: 0;
@@ -1119,9 +1126,13 @@ a.join-card:focus-visible {
   .item-showcase,
   .whip-media,
   .pending-media {
-    min-height: 360px;
+    min-height: 400px;
     border: 0;
     border-top: 1px solid #575342;
+  }
+
+  .item-showcase {
+    padding-bottom: 145px;
   }
 
   .showcase-controls {

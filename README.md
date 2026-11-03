@@ -26,6 +26,8 @@ Combat inside the unified **What’s Changed** section. A sticky category index
 shows the breadth of available subjects without requiring visitors to read
 every panel. Only one item collection and one Slayer creature animate at a
 time. Visitors who prefer reduced motion receive generated still frames.
+Each item selector also updates a short player-facing explanation beneath the
+loop.
 
 Source and release provenance is recorded in
 `assets/showcase/ASSET-SOURCES.md`.

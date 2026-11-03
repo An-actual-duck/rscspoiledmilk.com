@@ -618,8 +618,8 @@ h3 {
 }
 
 .item-showcase {
-  min-height: 500px;
-  padding: 35px 25px 125px;
+  min-height: 565px;
+  padding: 35px 25px 175px;
   border-top: 0;
   border-right: 0;
   border-bottom: 0;
@@ -637,7 +637,7 @@ h3 {
 .showcase-controls {
   position: absolute;
   right: 15px;
-  bottom: 38px;
+  bottom: 82px;
   left: 15px;
   z-index: 2;
   display: flex;
@@ -681,6 +681,32 @@ h3 {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
+}
+
+.item-caption {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  min-height: 66px;
+  padding: 9px 13px;
+  background: #090a08;
+  border-top: 1px solid #4e4c3d;
+}
+
+.item-caption strong {
+  display: block;
+  color: var(--gold);
+  font: 700 10px/1.35 var(--mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.item-caption p {
+  margin: 3px 0 0;
+  color: #aaa693;
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 .slayer-panel {
@@ -1132,7 +1158,12 @@ a.join-card:focus-visible {
   }
 
   .item-showcase {
-    padding-bottom: 145px;
+    min-height: 540px;
+    padding-bottom: 205px;
+  }
+
+  .item-showcase .showcase-controls {
+    bottom: 91px;
   }
 
   .showcase-controls {

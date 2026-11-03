@@ -41,6 +41,7 @@ const itemShowcase = document.querySelector('[data-item-showcase]');
 if (itemShowcase) {
   const image = itemShowcase.querySelector('[data-item-image]');
   const label = itemShowcase.querySelector('[data-item-label]');
+  const description = itemShowcase.querySelector('[data-item-description]');
   const buttons = [...itemShowcase.querySelectorAll('button[data-src]')];
 
   buttons.forEach((button) => {
@@ -48,6 +49,7 @@ if (itemShowcase) {
       image.src = displaySource(button.dataset.src);
       image.alt = button.dataset.alt;
       label.textContent = button.dataset.label;
+      description.textContent = button.dataset.description;
       setPressedButton(buttons, button);
     });
   });

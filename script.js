@@ -79,3 +79,33 @@ function refreshMotionPreference() {
 
 refreshMotionPreference();
 reducedMotion.addEventListener('change', refreshMotionPreference);
+
+const topicLinks = [...document.querySelectorAll('.topic-index a[href^="#"]')];
+const topicPanels = topicLinks
+  .map((link) => document.querySelector(link.getAttribute('href')))
+  .filter(Boolean);
+
+if (topicLinks.length && topicPanels.length && 'IntersectionObserver' in window) {
+  const topicObserver = new IntersectionObserver((entries) => {
+    const visiblePanel = entries
+      .filter((entry) => entry.isIntersecting)
+      .sort((first, second) => second.intersectionRatio - first.intersectionRatio)[0];
+
+    if (!visiblePanel) return;
+
+    topicLinks.forEach((link) => {
+      const isCurrent = link.getAttribute('href') === `#${visiblePanel.target.id}`;
+      link.classList.toggle('is-active', isCurrent);
+      if (isCurrent) {
+        link.setAttribute('aria-current', 'location');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
+  }, {
+    rootMargin: '-18% 0px -55% 0px',
+    threshold: [0, 0.15, 0.35]
+  });
+
+  topicPanels.forEach((panel) => topicObserver.observe(panel));
+}

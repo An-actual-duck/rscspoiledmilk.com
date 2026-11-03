@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Layout prototype for RSC: Spoiled Milk, an open-source RuneScape Classic expansion and overhaul.">
+  <meta name="description" content="RSC: Spoiled Milk is a free, open-source RuneScape Classic expansion and overhaul with new combat, equipment, skills, creatures, and more.">
   <title>RSC: Spoiled Milk — Absolutely Not Preserved</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
@@ -12,265 +12,210 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="prototype-bar">
-    <span>Layout prototype</span>
-    <span class="prototype-note">Now showing released v0.3.3 showcase art</span>
+    <span>Local website prototype</span>
+    <span>Release reference: v0.3.3</span>
   </div>
 
   <header class="site-header" data-header>
-    <a class="brand" href="#top" aria-label="RSC Spoiled Milk home">
-      <span class="brand-mark" aria-hidden="true">SM</span>
-      <span class="brand-name">RSC: <strong>Spoiled Milk</strong></span>
-    </a>
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="RSC Spoiled Milk home">
+        <span class="brand-mark" aria-hidden="true">SM</span>
+        <span class="brand-name">RSC: <strong>Spoiled Milk</strong></span>
+      </a>
 
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
-      <span class="sr-only">Toggle navigation</span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
 
-    <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
-      <a href="#features">Features</a>
-      <a href="#slayer">Slayer</a>
-      <a href="#future">Future</a>
-      <a href="#join">Download</a>
-      <a href="#join">Discord</a>
-      <details class="link-menu">
-        <summary>Links</summary>
-        <div class="link-menu-panel">
-          <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/wiki">Player Wiki</a>
-          <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk">Source Code</a>
-          <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/issues">Report an Issue</a>
-          <span>World Builder <small>link pending</small></span>
-        </div>
-      </details>
-    </nav>
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="#changed">What’s Changed</a>
+        <a href="#join">Download</a>
+        <a href="#join">Discord</a>
+        <details class="link-menu">
+          <summary>Links</summary>
+          <div class="link-menu-panel">
+            <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/wiki">Player Wiki</a>
+            <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk">Source Code</a>
+            <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/issues">Report an Issue</a>
+            <span>World Builder <small>Link pending</small></span>
+          </div>
+        </details>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span>A free public RuneScape Classic server</p>
-        <h1>RSC: Spoiled Milk<br><em>Absolutely Not Preserved.</em></h1>
-        <p class="hero-intro">Come hang out, soak up the nostalgia, and see what happens when an old favorite gets a few thousand new items, reworked combat, and entirely new skills. It's free, open source, and hosted for anyone who wants to drop in.</p>
+        <p class="eyebrow">A free public RuneScape Classic server</p>
+        <h1>RSC: Spoiled Milk <span>Absolutely Not Preserved.</span></h1>
+        <p class="hero-intro">Come hang out, soak up the nostalgia, and see what happens when an old favorite gets a few thousand new items, reworked combat, and entirely new skills. It’s free, open source, and hosted for anyone who wants to drop in.</p>
         <div class="hero-actions" aria-label="Primary actions">
-          <a class="button button-primary" href="#features">See what's new <span aria-hidden="true">↓</span></a>
-          <a class="button button-secondary" href="#join">Download client</a>
-          <a class="text-link" href="#join">Join Discord <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/releases/latest">Download client</a>
+          <a class="button" href="#changed">What’s changed?</a>
+          <a class="text-link" href="#join">Join Discord</a>
         </div>
         <ul class="quick-facts" aria-label="Project facts">
           <li><strong>Free</strong><span>to play</span></li>
-          <li><strong>Open</strong><span>source</span></li>
+          <li><strong>Open source</strong><span>built on Open RSC</span></li>
           <li><strong>v0.3.3</strong><span>current release</span></li>
         </ul>
       </div>
 
-      <div class="hero-media media-slot media-slot-hero" data-asset-slot="hero-gameplay">
-        <div class="media-grid" aria-hidden="true"></div>
+      <div class="hero-media media-frame" data-asset-slot="hero-gameplay">
         <div class="media-placeholder">
-          <span class="placeholder-kicker">Primary asset slot</span>
-          <strong>Hero gameplay image or short loop</strong>
-          <small>Preferred crop: 16:10 landscape</small>
+          <span>Primary showcase slot</span>
+          <strong>Gameplay image or short loop</strong>
+          <small>Wide in-game scene</small>
         </div>
-        <span class="media-caption">You remember this place. Mostly.</span>
+        <p>You remember this place. Mostly.</p>
       </div>
     </section>
 
-    <section class="proof section-shell" aria-labelledby="proof-title">
-      <div class="section-heading section-heading-centered">
-        <p class="eyebrow"><span></span>Feels familiar, doesn't it?</p>
-        <h2 id="proof-title">This nostalgia is hitting the spot, isn't it?</h2>
-        <p>It is still the RSC world you remember. We just couldn't resist tinkering with the combat, equipment, skills, progression, and quite a lot else.</p>
-      </div>
-      <div class="proof-grid">
-        <article><strong>2,000+</strong><span>more things to find</span></article>
-        <article><strong>3</strong><span>proper ways to fight</span></article>
-        <article><strong>New</strong><span>skills to learn</span></article>
-        <article><strong>One</strong><span>old world we couldn't leave alone</span></article>
-      </div>
-      <p class="prototype-disclaimer">Release baseline: v0.3.3. Remaining draft claims and links will be checked again before publication.</p>
-    </section>
-
-    <section class="features section-shell" id="features" aria-labelledby="features-title">
-      <div class="section-heading">
-        <p class="eyebrow"><span></span>What has changed?</p>
-        <h2 id="features-title">The RSC you remember,<br>plus quite a bit we couldn't leave alone.</h2>
-      </div>
-
-      <div class="feature-list">
-        <article class="feature feature-wide">
-          <div class="feature-copy">
-            <span class="feature-number">01 / Combat</span>
-            <h3>Bring a few friends. The monsters did.</h3>
-            <p>Melee, Ranged, and Magic all work in fights involving multiple players and enemies. Area attacks, new weapon families, summons, and support magic give everyone more to do than wait their turn.</p>
-            <a href="#join" class="inline-link">Have a look at combat <span aria-hidden="true">→</span></a>
-          </div>
-          <div class="media-slot feature-media showcase-media whip-media" data-asset-slot="combat-showcase">
-            <img src="assets/showcase/slayer/equipment/abyssal-whip-action.gif" alt="A player in dark beast hide armour demonstrating the Abyssal Whip">
-            <span class="asset-caption">Abyssal Whip with Dark beast hide armour</span>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="media-slot feature-media showcase-media item-showcase" data-item-showcase data-asset-slot="item-sprites">
-            <img data-item-image src="assets/showcase/items/elemental-swords.gif" alt="A selection of elemental swords">
-            <div class="showcase-controls" aria-label="Choose an item collection">
-              <button class="is-active" type="button" data-src="assets/showcase/items/elemental-swords.gif" data-alt="A selection of elemental swords" data-label="Elemental swords" aria-pressed="true">Swords</button>
-              <button type="button" data-src="assets/showcase/items/leather-armour-sets.gif" data-alt="A character cycling through expanded leather armour sets" data-label="Leather armour" aria-pressed="false">Armour</button>
-              <button type="button" data-src="assets/showcase/items/sigils.gif" data-alt="A selection of magical sigils" data-label="Sigils" aria-pressed="false">Sigils</button>
-              <button type="button" data-src="assets/showcase/items/bangles.gif" data-alt="A selection of bangles" data-label="Bangles" aria-pressed="false">Bangles</button>
-              <button type="button" data-src="assets/showcase/items/god-maces.gif" data-alt="A selection of god-aligned maces" data-label="God maces" aria-pressed="false">Maces</button>
-              <button type="button" data-src="assets/showcase/items/shuriken.gif" data-alt="A selection of shuriken" data-label="Shuriken" aria-pressed="false">Shuriken</button>
-            </div>
-            <span class="asset-caption" data-item-label>Elemental swords</span>
-          </div>
-          <div class="feature-copy">
-            <span class="feature-number">02 / Equipment</span>
-            <h3>There is a lot more stuff to find.</h3>
-            <p>New weapons, armor, tools, jewelry, resources, and crafting paths mean there is almost always another odd or useful thing waiting around the corner.</p>
-          </div>
-        </article>
-
-        <article class="feature feature-invert">
-          <div class="media-slot feature-media" data-asset-slot="worship-interface">
-            <div class="media-placeholder">
-              <span class="placeholder-kicker">Feature asset 03</span>
-              <strong>Worship, Devotion, or Cleric interface</strong>
-              <small>4:3 or landscape screenshot</small>
-            </div>
-          </div>
-          <div class="feature-copy">
-            <span class="feature-number">03 / Worship</span>
-            <h3>Prayer had some growing up to do.</h3>
-            <p>The familiar skill becomes Worship, tying redesigned prayers to Devotion, offerings, equipment, Blessing, and Cleric spells that can help your friends.</p>
-          </div>
-        </article>
-
-        <article class="feature">
-          <div class="media-slot feature-media" data-asset-slot="skills-showcase">
-            <div class="media-placeholder">
-              <span class="placeholder-kicker">Feature asset 04</span>
-              <strong>Enchanting or Summoning gameplay</strong>
-              <small>One focused action, not a busy collage</small>
-            </div>
-          </div>
-          <div class="feature-copy">
-            <span class="feature-number">04 / Skills</span>
-            <h3>Yes, there are entirely new skills.</h3>
-            <p>Enchanting and Summoning join expanded production paths, useful equipment effects, new guilds, and plenty of reasons to try a different way of playing.</p>
-          </div>
-        </article>
-
-        <article class="feature feature-invert">
-          <div class="media-slot feature-media" data-asset-slot="world-visuals">
-            <div class="media-placeholder">
-              <span class="placeholder-kicker">Feature asset 05</span>
-              <strong>Updated world or scenery screenshot</strong>
-              <small>Wide environmental composition</small>
-            </div>
-          </div>
-          <div class="feature-copy">
-            <span class="feature-number">05 / World</span>
-            <h3>It still feels like home.</h3>
-            <p>Updated scenery, equipment, creatures, effects, and multi-level environments make the world look better without sanding away the slightly peculiar character we came back for.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="slayer section-shell" id="slayer" aria-labelledby="slayer-title">
-      <div class="section-heading slayer-heading">
-        <p class="eyebrow"><span></span>Now in the game</p>
-        <h2 id="slayer-title">The Slayer Tower has opened its doors.</h2>
-        <p>There are new assignments to take, creatures to track down, and equipment worth bringing home. Pick a name below to meet some of the new locals. They are not especially pleased to see you.</p>
-      </div>
-
-      <div class="slayer-showcase" data-slayer-showcase>
-        <div class="slayer-stage">
-          <img data-slayer-image src="assets/showcase/slayer/monsters/abyssal-demon.gif" alt="An Abyssal demon turning and attacking">
-          <div class="slayer-stage-copy">
-            <span class="status-label">Slayer creature</span>
-            <h3 data-slayer-name>Abyssal demon</h3>
-            <p>One of eight new animated creatures waiting in the released Slayer content.</p>
-          </div>
-        </div>
-        <div class="slayer-roster" aria-label="Choose a Slayer creature">
-          <button class="is-active" type="button" data-src="assets/showcase/slayer/monsters/abyssal-demon.gif" data-name="Abyssal demon" data-alt="An Abyssal demon turning and attacking" aria-pressed="true">Abyssal demon</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/dark-beast.gif" data-name="Dark beast" data-alt="A Dark beast turning and attacking" aria-pressed="false">Dark beast</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/bloodveld.gif" data-name="Bloodveld" data-alt="A Bloodveld turning and attacking" aria-pressed="false">Bloodveld</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/naga.gif" data-name="Naga" data-alt="A Naga turning and attacking" aria-pressed="false">Naga</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/terror-dog.gif" data-name="Terror dog" data-alt="A Terror dog turning and attacking" aria-pressed="false">Terror dog</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/banshee.gif" data-name="Banshee" data-alt="A Banshee turning and attacking" aria-pressed="false">Banshee</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/cockatrice.gif" data-name="Cockatrice" data-alt="A Cockatrice turning and attacking" aria-pressed="false">Cockatrice</button>
-          <button type="button" data-src="assets/showcase/slayer/monsters/giant-frog.gif" data-name="Giant frog" data-alt="A Giant frog turning and attacking" aria-pressed="false">Giant frog</button>
-        </div>
-        <aside class="slayer-loot">
-          <img src="assets/showcase/slayer/equipment/slayer-weapons.gif" alt="The Abyssal Whip, Thunder Spire Staff, and Leaching Bow">
-          <div>
-            <span class="feature-number">Three combat styles</span>
-            <h3>A few convincing reasons to go upstairs.</h3>
-            <p>The Abyssal Whip, Thunder Spire Staff, and Leaching Bow give Melee, Magic, and Ranged players something new to chase.</p>
-          </div>
-        </aside>
-      </div>
-      <p class="prototype-disclaimer">Showcase animations present the released artwork clearly; they are not recordings of exact in-game combat timing.</p>
-    </section>
-
-    <section class="name-story section-shell" aria-labelledby="name-title">
-      <div class="milk-stamp" aria-hidden="true">
-        <span>OPEN RSC</span>
-        <strong>NOT<br>PRESERVED</strong>
-        <small>COME HANG OUT</small>
-      </div>
+    <section class="intro-strip" aria-label="Project introduction">
       <div>
-        <p class="eyebrow"><span></span>Why “Spoiled Milk”?</p>
-        <h2 id="name-title">The milk was never going to stay preserved.</h2>
-        <p>Open RSC names its builds after foods, including RSC Cabbage and RSC Kale. It also offers RSC Preserved: the untouched vanilla experience.</p>
-        <p>Spoiled Milk is built on Open RSC, but it is emphatically not preserved. The name is a thank-you to the project underneath it and a small warning that this bottle contains something rather different.</p>
+        <strong>2,000+</strong>
+        <span>new items</span>
       </div>
+      <p><strong>Same old world. Very different bottle.</strong> Spoiled Milk starts with RuneScape Classic, then cheerfully refuses to leave it untouched.</p>
     </section>
 
-    <section class="future section-shell" id="future" aria-labelledby="future-title">
-      <div class="section-heading future-heading">
-        <div>
-          <p class="eyebrow"><span></span>Still growing</p>
-          <h2 id="future-title">A few things on the workbench.</h2>
+    <section class="changed" id="changed" aria-labelledby="changed-title">
+      <header class="section-heading">
+        <p class="eyebrow">What’s changed?</p>
+        <h2 id="changed-title">Quite a lot, as it turns out.</h2>
+        <p>The categories below are the short version. Pick one to jump straight to it; more subjects will be added as their showcase media is ready.</p>
+      </header>
+
+      <div class="change-layout">
+        <aside class="topic-index" aria-label="What’s changed topics">
+          <strong>Browse changes</strong>
+          <nav>
+            <a href="#equipment"><span>01</span>Equipment</a>
+            <a href="#slayer"><span>02</span>Slayer</a>
+            <a href="#combat"><span>03</span>Combat</a>
+            <a href="#worship"><span>04</span>Worship</a>
+            <a href="#skills"><span>05</span>Skills</a>
+            <a href="#world"><span>06</span>World</a>
+          </nav>
+          <small>More categories will join these as the site grows.</small>
+        </aside>
+
+        <div class="change-content">
+          <article class="change-panel" id="equipment">
+            <div class="panel-copy">
+              <span class="panel-number">01 / Equipment</span>
+              <h3>There is a lot more stuff to find.</h3>
+              <p>New weapons, armour, tools, jewellery, resources, and crafting paths mean there is nearly always another odd or useful thing waiting around the corner.</p>
+            </div>
+            <div class="media-frame item-showcase" data-item-showcase data-asset-slot="item-sprites">
+              <img data-item-image src="assets/showcase/items/elemental-swords.gif" alt="A selection of elemental swords">
+              <div class="showcase-controls" aria-label="Choose an item collection">
+                <button class="is-active" type="button" data-src="assets/showcase/items/elemental-swords.gif" data-alt="A selection of elemental swords" data-label="Elemental swords" aria-pressed="true">Swords</button>
+                <button type="button" data-src="assets/showcase/items/leather-armour-sets.gif" data-alt="A character cycling through expanded leather armour sets" data-label="Leather armour" aria-pressed="false">Armour</button>
+                <button type="button" data-src="assets/showcase/items/sigils.gif" data-alt="A selection of magical sigils" data-label="Sigils" aria-pressed="false">Sigils</button>
+                <button type="button" data-src="assets/showcase/items/bangles.gif" data-alt="A selection of bangles" data-label="Bangles" aria-pressed="false">Bangles</button>
+                <button type="button" data-src="assets/showcase/items/god-maces.gif" data-alt="A selection of god-aligned maces" data-label="God maces" aria-pressed="false">Maces</button>
+                <button type="button" data-src="assets/showcase/items/shuriken.gif" data-alt="A selection of shuriken" data-label="Shuriken" aria-pressed="false">Shuriken</button>
+              </div>
+              <span class="asset-caption" data-item-label>Elemental swords</span>
+            </div>
+          </article>
+
+          <article class="change-panel slayer-panel" id="slayer">
+            <div class="panel-copy">
+              <span class="panel-number">02 / Slayer</span>
+              <h3>The Slayer Tower has opened its doors.</h3>
+              <p>Take new assignments, track down unfamiliar creatures, and bring home equipment for all three combat styles. Pick a name to meet some of the new locals.</p>
+            </div>
+            <div class="slayer-showcase" data-slayer-showcase>
+              <div class="slayer-stage media-frame">
+                <img data-slayer-image src="assets/showcase/slayer/monsters/abyssal-demon.gif" alt="An Abyssal demon turning and attacking">
+                <strong data-slayer-name>Abyssal demon</strong>
+              </div>
+              <div class="slayer-roster" aria-label="Choose a Slayer creature">
+                <button class="is-active" type="button" data-src="assets/showcase/slayer/monsters/abyssal-demon.gif" data-name="Abyssal demon" data-alt="An Abyssal demon turning and attacking" aria-pressed="true">Abyssal demon</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/dark-beast.gif" data-name="Dark beast" data-alt="A Dark beast turning and attacking" aria-pressed="false">Dark beast</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/bloodveld.gif" data-name="Bloodveld" data-alt="A Bloodveld turning and attacking" aria-pressed="false">Bloodveld</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/naga.gif" data-name="Naga" data-alt="A Naga turning and attacking" aria-pressed="false">Naga</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/terror-dog.gif" data-name="Terror dog" data-alt="A Terror dog turning and attacking" aria-pressed="false">Terror dog</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/banshee.gif" data-name="Banshee" data-alt="A Banshee turning and attacking" aria-pressed="false">Banshee</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/cockatrice.gif" data-name="Cockatrice" data-alt="A Cockatrice turning and attacking" aria-pressed="false">Cockatrice</button>
+                <button type="button" data-src="assets/showcase/slayer/monsters/giant-frog.gif" data-name="Giant frog" data-alt="A Giant frog turning and attacking" aria-pressed="false">Giant frog</button>
+              </div>
+            </div>
+            <div class="weapon-strip">
+              <img src="assets/showcase/slayer/equipment/slayer-weapons.gif" alt="The Abyssal Whip, Thunder Spire Staff, and Leaching Bow">
+              <p><strong>Three combat styles, three new prizes.</strong> The Abyssal Whip, Thunder Spire Staff, and Leaching Bow are a few convincing reasons to head upstairs.</p>
+            </div>
+            <p class="media-note">Showcase timing is illustrative rather than a recording of live combat cadence.</p>
+          </article>
+
+          <article class="change-panel split-panel" id="combat">
+            <div class="panel-copy">
+              <span class="panel-number">03 / Combat</span>
+              <h3>Bring a few friends. The monsters did.</h3>
+              <p>Melee, Ranged, and Magic all work in fights involving multiple players and enemies. Area attacks, support magic, new weapon families, and summons give everyone more to do than wait their turn.</p>
+            </div>
+            <div class="media-frame whip-media" data-asset-slot="combat-showcase">
+              <img src="assets/showcase/slayer/equipment/abyssal-whip-action.gif" alt="A player in dark beast hide armour demonstrating the Abyssal Whip">
+              <span class="asset-caption">Abyssal Whip and Dark beast hide armour</span>
+            </div>
+          </article>
+
+          <article class="change-panel split-panel" id="worship">
+            <div class="panel-copy">
+              <span class="panel-number">04 / Worship</span>
+              <h3>Prayer had some growing up to do.</h3>
+              <p>The familiar skill becomes Worship, tying redesigned prayers to Devotion, offerings, equipment, Blessing, and Cleric spells that can help your friends.</p>
+            </div>
+            <div class="media-frame pending-media" data-asset-slot="worship-interface">
+              <span>Media wanted</span>
+              <strong>Worship, Devotion, or Cleric interface</strong>
+            </div>
+          </article>
+
+          <article class="change-panel split-panel" id="skills">
+            <div class="panel-copy">
+              <span class="panel-number">05 / Skills</span>
+              <h3>Yes, there are entirely new skills.</h3>
+              <p>Enchanting and Summoning join expanded production paths, useful equipment effects, new guilds, and plenty of reasons to try a different way of playing.</p>
+            </div>
+            <div class="media-frame pending-media" data-asset-slot="skills-showcase">
+              <span>Media wanted</span>
+              <strong>Enchanting or Summoning gameplay</strong>
+            </div>
+          </article>
+
+          <article class="change-panel split-panel" id="world">
+            <div class="panel-copy">
+              <span class="panel-number">06 / World</span>
+              <h3>It still feels like home.</h3>
+              <p>Updated scenery, equipment, creatures, effects, and multi-level environments improve the familiar world without sanding away the peculiar character we came back for.</p>
+            </div>
+            <div class="media-frame pending-media" data-asset-slot="world-visuals">
+              <span>Media wanted</span>
+              <strong>Updated world or scenery screenshot</strong>
+            </div>
+          </article>
         </div>
-        <p>We're still tinkering. These are a few familiar places currently finding their way into Spoiled Milk.</p>
       </div>
-
-      <div class="roadmap-grid roadmap-grid-two">
-        <article class="roadmap-card">
-          <div class="media-slot roadmap-media" data-asset-slot="future-god-wars">
-            <div class="media-placeholder compact"><strong>God Wars sprite sheet</strong></div>
-          </div>
-          <span class="status-label">In development</span>
-          <h3>God Wars Dungeon</h3>
-          <p>We're seeing what the old faction war might look like with Spoiled Milk's combat and equipment.</p>
-        </article>
-        <article class="roadmap-card">
-          <div class="media-slot roadmap-media" data-asset-slot="future-barrows">
-            <div class="media-placeholder compact"><strong>Barrows sprite sheet</strong></div>
-          </div>
-          <span class="status-label">In development</span>
-          <h3>Barrows Brothers</h3>
-          <p>Six familiar brothers, old crypts, and plenty of room to make the trip underground feel new again.</p>
-        </article>
-      </div>
-      <p class="future-note">Future plans, names, visuals, and details may change during development.</p>
     </section>
 
-    <section class="join section-shell" id="join" aria-labelledby="join-title">
-      <div class="join-copy">
-        <p class="eyebrow"><span></span>Come hang out</p>
+    <section class="join" id="join" aria-labelledby="join-title">
+      <header>
+        <p class="eyebrow">Come hang out</p>
         <h2 id="join-title">Fancy another wander around?</h2>
-        <p>Download the client, read about what changed, or drop into our small Discord for some friendly chatter.</p>
-      </div>
+        <p>Download the client, read about the unfamiliar bits, or drop into our small Discord for some friendly chatter.</p>
+      </header>
       <div class="join-actions">
         <a class="join-card primary" href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/releases/latest">
           <span>Get the game</span>
           <strong>Download Client</strong>
-          <small>Official GitHub release ↗</small>
+          <small>Official GitHub release</small>
         </a>
         <div class="join-card pending" aria-disabled="true">
           <span>Come say hello</span>
@@ -280,24 +225,26 @@
         <a class="join-card" href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/wiki">
           <span>Learn the systems</span>
           <strong>Read the Wiki</strong>
-          <small>Player guides ↗</small>
+          <small>Player guides</small>
         </a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="footer-brand">
-      <span class="brand-mark" aria-hidden="true">SM</span>
-      <div><strong>RSC: Spoiled Milk</strong><span>Absolutely Not Preserved.</span></div>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark" aria-hidden="true">SM</span>
+        <div><strong>RSC: Spoiled Milk</strong><span>Absolutely Not Preserved.</span></div>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk">Source</a>
+        <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/issues">Issues</a>
+        <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/wiki">Wiki</a>
+        <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/releases/latest">Latest release</a>
+      </nav>
+      <p>Independent community project built on Open RSC. Prototype copy and visuals are not final.</p>
     </div>
-    <nav aria-label="Footer navigation">
-      <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk">Source</a>
-      <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/issues">Issues</a>
-      <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/wiki">Wiki</a>
-      <a href="https://github.com/An-actual-duck/open-rsc-spoiled-milk/releases/latest">Latest release</a>
-    </nav>
-    <p>Independent community project built on Open RSC. Prototype copy and visuals are not final.</p>
   </footer>
 
   <script src="script.js"></script>

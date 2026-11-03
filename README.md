@@ -1,8 +1,9 @@
 # Homepage Prototype
 
 This is a dependency-free visual prototype for `rscspoiledmilk.com`. It tests
-the layout, hierarchy, brand voice, responsive behavior, and restrained retro
-styling before a hosting platform or production framework is selected.
+the layout, hierarchy, brand voice, responsive behavior, and early-2000s
+game-site styling before a hosting platform or production framework is
+selected.
 
 ## Preview locally
 
@@ -20,10 +21,11 @@ matches how the final site will load.
 
 ## Integrated showcase art
 
-The prototype now uses released project artwork for the item-variety panel,
-the Abyssal Whip combat panel, and a dedicated interactive Slayer section.
-Only one item collection and one Slayer creature animate at a time to keep the
-page calm. Visitors who prefer reduced motion receive generated still frames.
+The prototype now uses released project artwork for Equipment, Slayer, and
+Combat inside the unified **What’s Changed** section. A sticky category index
+shows the breadth of available subjects without requiring visitors to read
+every panel. Only one item collection and one Slayer creature animate at a
+time. Visitors who prefer reduced motion receive generated still frames.
 
 Source and release provenance is recorded in
 `assets/showcase/ASSET-SOURCES.md`.
@@ -40,8 +42,6 @@ Every visual placeholder has a stable `data-asset-slot` name:
 | `worship-interface` | Worship, Devotion, Blessing, or Cleric image |
 | `skills-showcase` | Enchanting or Summoning image |
 | `world-visuals` | Updated scenery or world image |
-| `future-god-wars` | God Wars development sprites/art |
-| `future-barrows` | Barrows development sprites/art |
 
 Keep original-resolution source assets outside the web-sized output until
 their licensing and public-use status are confirmed. Each remaining
@@ -52,6 +52,8 @@ placeholder can be replaced with a `<picture>`, `<img>`, or user-controlled
 
 - The Discord and world-builder links are intentionally inactive until durable
   destinations are supplied.
+- Future-content cards are intentionally absent until the owner is comfortable
+  that their public presentation will not imply an imminent release.
 - Feature counts and remaining mechanical copy require a final check against
   the current released version before publication.
 - The `SM` mark is a CSS-built placeholder, not a final logo.

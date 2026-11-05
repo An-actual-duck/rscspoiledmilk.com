@@ -1041,10 +1041,6 @@ a.join-card:focus-visible {
   color: #54471f;
 }
 
-.join-card.pending {
-  opacity: 0.55;
-}
-
 .site-footer {
   color: #aaa693;
   background: #090a08;

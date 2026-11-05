@@ -22,16 +22,17 @@ by the website prototype and reduced-motion still frames derived with FFmpeg.
   `b31466614322e6e0b6b29f6c6dca45c11fda0da0`. These are offline
   compositions using the real client renderer. Effect timing is authentic;
   pauses between scenes are editorial.
-- `items/`: twelve item-variety GIFs from the owner-supplied v002 folder.
-  Elemental swords, leather armour sets, sigils, bangles, god maces, and
-  shuriken are byte-for-byte identical to their released v001 counterparts.
+- `items/`: twelve item-variety GIFs from the owner-supplied v002 folder, plus
+  the v0.3.4 Herblaw ingredients loop. Elemental swords, leather armour sets,
+  sigils, bangles, god maces, and shuriken are byte-for-byte identical to
+  their earlier v001 counterparts.
+- `items/herblaw-ingredients.gif`: from
+  `output/art/showcase/herblaw-ingredients/v001/`, release v0.3.4, source
+  commit `3335addcea396a0dd5069580508233a7617791ba`.
 
-## Visual-corrections previews
+## Visual-corrections history
 
-At the owner's direction, the gallery also includes the changed v002 robes,
-bolts, crossbows, two staff collections, and ingots. Their source manifest
-describes them as a visual-corrections candidate and says the public v0.3.3
-deployment is unchanged. The prototype labels the collection as previewing
-the next round of sprite touch-ups. Remove that note once the corrected art is
-part of a public release.
+The changed v002 robes, bolts, crossbows, two staff collections, and ingots
+were initially imported as previews. Their corrected visuals were published
+in v0.3.4 and no longer require a development label.
 

@@ -40,7 +40,7 @@ Every visual placeholder has a stable `data-asset-slot` name:
 | --- | --- |
 | `hero-gameplay` | Wide world or combat screenshot/loop |
 | `combat-showcase` | Filled with the released Abyssal Whip showcase; replace later if a representative multi-combat clip is supplied |
-| `item-sprites` | Filled with twelve item collections; six preview v002 visual touch-ups |
+| `item-sprites` | Filled with thirteen released item collections |
 | `skills-showcase` | Enchanting or Summoning image |
 | `world-visuals` | Updated scenery or world image |
 

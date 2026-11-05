@@ -602,13 +602,6 @@ h3 {
   color: var(--ink-soft);
 }
 
-.panel-note {
-  display: block;
-  margin-top: 18px;
-  color: #7f7c6b;
-  font: 700 9px/1.5 var(--mono);
-}
-
 .panel-number {
   margin-bottom: 16px;
   color: var(--rust);

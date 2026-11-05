@@ -237,7 +237,7 @@ img {
 .eyebrow {
   margin: 0 0 18px;
   color: var(--green);
-  font: 700 11px/1.4 var(--mono);
+  font: 800 14px/1.35 var(--mono);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -377,7 +377,7 @@ h3 {
 
 .quick-facts span {
   color: #848174;
-  font: 700 9px/1.4 var(--mono);
+  font: 700 10px/1.4 var(--mono);
   text-transform: uppercase;
 }
 
@@ -420,7 +420,7 @@ h3 {
 
 .pending-media span {
   color: var(--green);
-  font: 700 10px/1.4 var(--mono);
+  font: 700 12px/1.4 var(--mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -476,7 +476,7 @@ h3 {
   color: #16170f;
   background: var(--gold);
   border-bottom: 1px solid #f1dc8a;
-  font: 800 11px/1.3 var(--mono);
+  font: 800 12px/1.3 var(--mono);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -551,7 +551,7 @@ h3 {
 .panel-number {
   margin-bottom: 16px;
   color: var(--rust);
-  font: 800 10px/1.4 var(--mono);
+  font: 800 13px/1.35 var(--mono);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -636,7 +636,7 @@ h3 {
 .item-caption strong {
   display: block;
   color: var(--gold);
-  font: 700 10px/1.35 var(--mono);
+  font: 800 12px/1.35 var(--mono);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -782,7 +782,7 @@ h3 {
 .magic-showcase figcaption span {
   display: block;
   color: var(--green);
-  font: 700 9px/1.35 var(--mono);
+  font: 800 11px/1.35 var(--mono);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -924,7 +924,7 @@ h3 {
 .skill-explainers span,
 .combat-explainers span {
   color: var(--rust);
-  font: 800 9px/1.35 var(--mono);
+  font: 800 13px/1.35 var(--mono);
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -1013,7 +1013,7 @@ a.join-card:focus-visible {
 .join-card span {
   grid-column: 1;
   color: #858272;
-  font: 700 9px/1.4 var(--mono);
+  font: 800 11px/1.4 var(--mono);
   text-transform: uppercase;
 }
 

@@ -41,7 +41,6 @@ Every visual placeholder has a stable `data-asset-slot` name:
 | `hero-gameplay` | Wide world or combat screenshot/loop |
 | `combat-showcase` | Filled with the released Abyssal Whip showcase; replace later if a representative multi-combat clip is supplied |
 | `item-sprites` | Filled with twelve item collections; six preview v002 visual touch-ups |
-| `worship-interface` | Worship, Devotion, Blessing, or Cleric image |
 | `skills-showcase` | Enchanting or Summoning image |
 | `world-visuals` | Updated scenery or world image |
 
@@ -56,6 +55,8 @@ placeholder can be replaced with a `<picture>`, `<img>`, or user-controlled
   destinations are supplied.
 - Future-content cards are intentionally absent until the owner is comfortable
   that their public presentation will not imply an imminent release.
+- Worship intentionally uses a text-led panel because its largest changes are
+  mechanical rather than visual; the detailed guide carries the full system.
 - Feature counts and remaining mechanical copy require a final check against
   the current released version before publication.
 - The `SM` mark is a CSS-built placeholder, not a final logo.

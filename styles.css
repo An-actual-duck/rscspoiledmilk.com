@@ -866,6 +866,50 @@ h3 {
   grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
 }
 
+.text-panel {
+  display: block;
+}
+
+.worship-copy {
+  min-height: auto;
+  max-width: 880px;
+  padding-top: 52px;
+  padding-bottom: 52px;
+}
+
+.worship-copy .text-lead {
+  color: #ded8c1;
+  font-family: var(--display);
+  font-size: clamp(21px, 2.2vw, 28px);
+  line-height: 1.35;
+}
+
+.worship-copy .text-lead + p {
+  max-width: 760px;
+  margin-top: 18px;
+}
+
+.guide-link {
+  display: inline-block;
+  padding: 9px 12px;
+  margin-top: 25px;
+  color: #14160e;
+  background: var(--green);
+  border: 1px solid #c0d584;
+  border-right-color: #45582c;
+  border-bottom-color: #45582c;
+  box-shadow: inset -1px -1px 0 #536b30, 2px 2px 0 #000;
+  font: 800 10px/1.3 var(--mono);
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.guide-link:hover,
+.guide-link:focus-visible {
+  background: #a9c66a;
+}
+
 .whip-media,
 .pending-media {
   min-height: 390px;
@@ -1080,6 +1124,7 @@ a.join-card:focus-visible {
     position: sticky;
     top: 70px;
     z-index: 20;
+    min-width: 0;
   }
 
   .topic-index > strong,
@@ -1089,6 +1134,7 @@ a.join-card:focus-visible {
 
   .topic-index nav {
     display: flex;
+    min-width: 0;
     overflow-x: auto;
   }
 

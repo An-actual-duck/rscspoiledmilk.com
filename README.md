@@ -21,11 +21,12 @@ matches how the final site will load.
 
 ## Integrated showcase art
 
-The prototype now uses project artwork for Equipment, Slayer, Combat, and
-Magic inside the unified **What’s Changed** section. A sticky category index
-shows the breadth of available subjects without requiring visitors to read
-every panel. Only one item collection and one Slayer creature animate at a
-time. Visitors who prefer reduced motion receive generated still frames.
+The prototype now uses project artwork for Equipment, Slayer, Combat, Magic,
+and Skills inside the unified **What’s Changed** section. A sticky category
+index shows the breadth of available subjects without requiring visitors to
+read every panel. Only one item collection and one Slayer creature animate at
+a time. Visitors who prefer reduced motion receive generated still frames and
+the Skills montage remains paused on its poster.
 Each item selector also updates a short player-facing explanation beneath the
 loop.
 
@@ -41,7 +42,6 @@ Every visual placeholder has a stable `data-asset-slot` name:
 | `hero-gameplay` | Wide world or combat screenshot/loop |
 | `combat-showcase` | Filled with the released Abyssal Whip showcase; replace later if a representative multi-combat clip is supplied |
 | `item-sprites` | Filled with thirteen released item collections |
-| `skills-showcase` | Enchanting or Summoning image |
 | `world-visuals` | Updated scenery or world image |
 
 Keep original-resolution source assets outside the web-sized output until

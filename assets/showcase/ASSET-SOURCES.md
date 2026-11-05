@@ -22,6 +22,11 @@ by the website prototype and reduced-motion still frames derived with FFmpeg.
   `b31466614322e6e0b6b29f6c6dca45c11fda0da0`. These are offline
   compositions using the real client renderer. Effect timing is authentic;
   pauses between scenes are editorial.
+- `skills/skills-showcase-loop.mp4`: from
+  `output/art/showcase/skills-footage/montage/v006/`. It is a 16.9-second,
+  silent H.264 loop showing Blessing, Enchanting, and Leatherworking, with
+  SHA-256 `cd6b171c0121201ef1b150ff2bc65030bce8bf7861ce4c8492f5935eab518454`.
+  The poster is a web derivative from the Leatherworking portion of the loop.
 - `items/`: twelve item-variety GIFs from the owner-supplied v002 folder, plus
   the v0.3.4 Herblaw ingredients loop. Elemental swords, leather armour sets,
   sigils, bangles, god maces, and shuriken are byte-for-byte identical to

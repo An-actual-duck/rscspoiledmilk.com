@@ -82,6 +82,24 @@ function refreshMotionPreference() {
 refreshMotionPreference();
 reducedMotion.addEventListener('change', refreshMotionPreference);
 
+const showcaseVideos = [...document.querySelectorAll('[data-showcase-video]')];
+
+function refreshVideoMotionPreference() {
+  showcaseVideos.forEach((video) => {
+    if (reducedMotion.matches) {
+      video.pause();
+      video.currentTime = 0;
+    } else {
+      video.play().catch(() => {
+        // Browser autoplay policies may require the visitor to press play.
+      });
+    }
+  });
+}
+
+refreshVideoMotionPreference();
+reducedMotion.addEventListener('change', refreshVideoMotionPreference);
+
 const topicLinks = [...document.querySelectorAll('.topic-index a[href^="#"]')];
 const topicPanels = topicLinks
   .map((link) => document.querySelector(link.getAttribute('href')))

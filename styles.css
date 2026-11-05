@@ -903,6 +903,64 @@ h3 {
   background: #a9c66a;
 }
 
+.skills-panel {
+  display: block;
+}
+
+.skills-panel > .panel-copy {
+  min-height: auto;
+  padding-bottom: 28px;
+}
+
+.skills-video-frame {
+  margin: 0 38px;
+  background: #080a08;
+  border: 1px solid #69644f;
+  box-shadow: inset 0 0 0 4px #090a07, 3px 3px 0 #000;
+}
+
+.skills-video-frame video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  object-fit: cover;
+}
+
+.skill-explainers {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin: 18px 38px 34px;
+}
+
+.skill-explainers article {
+  padding: 18px;
+  background: #0c0e0b;
+  border: 1px solid #4d4a3c;
+  box-shadow: inset 1px 1px 0 #2a2c24;
+}
+
+.skill-explainers span {
+  color: var(--rust);
+  font: 800 9px/1.35 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.skill-explainers h4 {
+  margin: 7px 0 9px;
+  color: #e1dcc6;
+  font: 700 20px/1.15 var(--display);
+}
+
+.skill-explainers p {
+  margin: 0;
+  color: #aaa693;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
 .whip-media,
 .pending-media {
   min-height: 390px;
@@ -1307,6 +1365,15 @@ a.join-card:focus-visible {
 
   .magic-showcase figcaption {
     padding: 16px;
+  }
+
+  .skills-video-frame {
+    margin: 0 20px;
+  }
+
+  .skill-explainers {
+    grid-template-columns: 1fr;
+    margin: 14px 20px 24px;
   }
 
   .join {

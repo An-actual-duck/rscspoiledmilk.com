@@ -2,7 +2,7 @@
 
 These are web copies of project-owned showcase exports. The source files stay
 in the read-only game repository; this directory contains only the files used
-by the website prototype and reduced-motion still frames derived with FFmpeg.
+by the website and reduced-motion still frames derived with FFmpeg.
 
 ## Released assets
 

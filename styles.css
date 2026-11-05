@@ -450,45 +450,6 @@ h3 {
   color: #777665;
 }
 
-.intro-strip {
-  display: grid;
-  grid-template-columns: 220px 1fr;
-  width: min(1180px, calc(100% - 32px));
-  margin: 0 auto;
-  background: #171812;
-  border: 1px solid var(--line);
-  box-shadow: inset 1px 1px 0 #35362d, 3px 3px 0 #000;
-}
-
-.intro-strip > div {
-  display: grid;
-  padding: 22px 26px;
-  background: #24261a;
-  border-right: 1px solid var(--line);
-}
-
-.intro-strip > div strong {
-  color: var(--gold);
-  font: 700 35px/1 var(--display);
-}
-
-.intro-strip > div span {
-  color: #96927e;
-  font: 700 10px/1.4 var(--mono);
-  text-transform: uppercase;
-}
-
-.intro-strip > p {
-  align-self: center;
-  padding: 18px 28px;
-  margin: 0;
-  color: #a8a591;
-}
-
-.intro-strip > p strong {
-  color: #e1dcc7;
-}
-
 .changed,
 .join {
   width: min(1180px, calc(100% - 32px));
@@ -1257,7 +1218,6 @@ a.join-card:focus-visible {
   }
 
   .hero,
-  .intro-strip,
   .changed,
   .join,
   .footer-inner {
@@ -1308,15 +1268,6 @@ a.join-card:focus-visible {
 
   .hero-media {
     min-height: 300px;
-  }
-
-  .intro-strip {
-    grid-template-columns: 1fr;
-  }
-
-  .intro-strip > div {
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
   }
 
   .changed,

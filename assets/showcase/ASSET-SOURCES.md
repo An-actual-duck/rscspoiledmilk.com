@@ -39,6 +39,12 @@ by the website prototype and reduced-motion still frames derived with FFmpeg.
   SHA-256:
   `f2f5c42a44d08bd93e071aebeec305fb6667476700ea22a978837f7d655bdd5d`.
   The poster is a web derivative from the opening location.
+- `hero/lighting-cycle-showcase-loop.mp4`: from
+  `output/art/showcase/lighting-footage/montage/v001/`. It is a 20-second,
+  silent H.264 loop showing an overhead town view as the new outdoor lighting
+  cycles through the day. SHA-256:
+  `cc10a4b19da022d0378d8c88186657822fffffe113e238de4e9416137c4ea968`.
+  The poster is a daylight web derivative from the loop.
 - `items/`: twelve item-variety GIFs from the owner-supplied v002 folder, plus
   the v0.3.4 Herblaw ingredients loop. Elemental swords, leather armour sets,
   sigils, bangles, god maces, and shuriken are byte-for-byte identical to

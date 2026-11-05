@@ -33,6 +33,12 @@ by the website prototype and reduced-motion still frames derived with FFmpeg.
   scythe, shuriken, and Iban Blast. SHA-256:
   `9c07e50ce0fa3c273332a32202d60fbb8ac87349e0d0b69544f9d0175e4db9cf`.
   The poster is a web derivative from the scythe portion of the loop.
+- `world/locations-showcase-crossfade.mp4`: from
+  `output/art/showcase/locations-footage/montage/v001/`. It is a 16.5-second,
+  silent H.264 crossfade montage of familiar, updated, and new locations.
+  SHA-256:
+  `f2f5c42a44d08bd93e071aebeec305fb6667476700ea22a978837f7d655bdd5d`.
+  The poster is a web derivative from the opening location.
 - `items/`: twelve item-variety GIFs from the owner-supplied v002 folder, plus
   the v0.3.4 Herblaw ingredients loop. Elemental swords, leather armour sets,
   sigils, bangles, god maces, and shuriken are byte-for-byte identical to

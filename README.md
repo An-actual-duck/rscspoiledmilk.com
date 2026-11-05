@@ -51,8 +51,8 @@ placeholder can be replaced with a `<picture>`, `<img>`, or user-controlled
 
 ## Prototype limitations
 
-- The Discord and world-builder links are intentionally inactive until durable
-  destinations are supplied.
+- The world-builder link is not included until a durable public destination is
+  supplied.
 - Future-content cards are intentionally absent until the owner is comfortable
   that their public presentation will not imply an imminent release.
 - Worship intentionally uses a text-led panel because its largest changes are

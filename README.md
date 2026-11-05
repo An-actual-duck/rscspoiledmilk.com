@@ -21,8 +21,8 @@ matches how the final site will load.
 
 ## Integrated showcase art
 
-The prototype now uses released project artwork for Equipment, Slayer, and
-Combat inside the unified **What’s Changed** section. A sticky category index
+The prototype now uses project artwork for Equipment, Slayer, Combat, and
+Magic inside the unified **What’s Changed** section. A sticky category index
 shows the breadth of available subjects without requiring visitors to read
 every panel. Only one item collection and one Slayer creature animate at a
 time. Visitors who prefer reduced motion receive generated still frames.

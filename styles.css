@@ -802,6 +802,66 @@ h3 {
   font: 700 9px/1.5 var(--mono);
 }
 
+.magic-panel {
+  display: block;
+}
+
+.magic-panel > .panel-copy {
+  min-height: auto;
+  padding-bottom: 28px;
+}
+
+.magic-showcase {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 9px;
+  margin: 0 38px;
+}
+
+.magic-showcase figure {
+  min-width: 0;
+  margin: 0;
+  background: #0b0d10;
+  border: 1px solid #5b5949;
+  box-shadow: inset 1px 1px 0 #34362e, 2px 2px 0 #000;
+}
+
+.magic-showcase img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #111923;
+  border-bottom: 1px solid #4b493d;
+  image-rendering: pixelated;
+}
+
+.magic-showcase figcaption {
+  padding: 14px;
+}
+
+.magic-showcase figcaption span {
+  display: block;
+  color: var(--green);
+  font: 700 9px/1.35 var(--mono);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.magic-showcase figcaption strong {
+  display: block;
+  margin-top: 3px;
+  color: var(--gold);
+  font: 700 22px/1.15 var(--display);
+}
+
+.magic-showcase figcaption p {
+  margin: 8px 0 0;
+  color: #aaa693;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
 .split-panel {
   grid-template-columns: minmax(300px, 0.9fr) minmax(0, 1.1fr);
 }
@@ -1199,6 +1259,15 @@ a.join-card:focus-visible {
   .media-note {
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  .magic-showcase {
+    grid-template-columns: 1fr;
+    margin: 0 20px;
+  }
+
+  .magic-showcase figcaption {
+    padding: 16px;
   }
 
   .join {

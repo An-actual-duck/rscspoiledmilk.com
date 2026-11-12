@@ -151,7 +151,10 @@ img {
 
 .site-nav > a,
 .link-menu > summary {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   padding: 9px 13px;
   color: #d4d0c0;
   background: #20211c;
@@ -162,6 +165,17 @@ img {
   cursor: pointer;
   font: 700 12px/1.25 var(--sans);
   text-decoration: none;
+}
+
+.nav-badge {
+  padding: 2px 5px 1px;
+  color: #1a1307;
+  background: var(--gold);
+  border: 1px solid #f4d77a;
+  box-shadow: inset 1px 1px 0 #fff0ac, inset -1px -1px 0 #6b4d13;
+  font: 800 9px/1.2 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .site-nav > a:hover,
@@ -1128,6 +1142,7 @@ a.join-card:focus-visible {
 
   .site-nav > a,
   .link-menu > summary {
+    justify-content: flex-start;
     padding: 12px;
   }
 
